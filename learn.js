@@ -1,8 +1,14 @@
-function learn(){
-    console.log("this is git")
-}
+function to(arr){
+      var res={}
+      for(let i=0;i<arr.length;i++){
+          if(arr[i]){
+              
+              for (const key in arr[i]) {
+                 res[key]=arr[i][key]
+              }
+          }
+      }
+            return res
+  }
 
-function git_status(){
-    console.log("this my status")
-}
-vgggggggggggggggg
+  console.log(1111,to([{a:1},{b:2},{c:2,d:4}])) // { a: 1, b: 2, c: 2, d: 4 }
